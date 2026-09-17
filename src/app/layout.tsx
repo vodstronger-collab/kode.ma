@@ -1,5 +1,4 @@
 import { JsonLd } from "@/components/seo/JsonLd";
-import { AppProviders } from "@/components/providers/AppProviders";
 import type { Metadata } from "next";
 import { Outfit, Plus_Jakarta_Sans } from "next/font/google";
 import {
@@ -16,12 +15,14 @@ const outfit = Outfit({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-outfit",
+  adjustFontFallback: true,
 });
 
 const jakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-jakarta",
+  adjustFontFallback: true,
 });
 
 export const metadata: Metadata = {
@@ -71,11 +72,12 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="fr" className={`${outfit.variable} ${jakarta.variable}`}>
+      <head>
+        <link rel="dns-prefetch" href="https://flagcdn.com" />
+      </head>
       <body className="font-sans antialiased">
-        <AppProviders>
-          <JsonLd />
-          {children}
-        </AppProviders>
+        <JsonLd />
+        {children}
       </body>
     </html>
   );

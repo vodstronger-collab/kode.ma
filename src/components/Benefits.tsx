@@ -49,7 +49,7 @@ export function Benefits() {
               key={step.title}
               className={`rounded-2xl p-5 ${i % 2 === 0 ? "surface-soft" : "surface-red"}`}
             >
-              <h3 className={`font-semibold ${i % 2 === 0 ? "text-[#002395]" : "text-[#ed2939]"}`}>
+              <h3 className={`font-semibold ${i % 2 === 0 ? "text-[#002395]" : "text-[var(--france-red-text)]"}`}>
                 {step.title}
               </h3>
               <p className="muted mt-1 text-sm">{step.text}</p>

@@ -74,20 +74,22 @@ export default function AbonnementPage() {
           </div>
         </div>
         <div className="mt-6 flex flex-wrap gap-4 text-sm">
-          <Link href="/guide" className="text-[#ed2939] hover:underline">
+          <Link href="/guide" className="text-[var(--france-red-text)] hover:underline">
             Guide d&apos;installation
           </Link>
-          <Link href="/fonctionnalites" className="text-[#ed2939] hover:underline">
+          <Link href="/fonctionnalites" className="text-[var(--france-red-text)] hover:underline">
             Fonctionnalités techniques
           </Link>
-          <Link href="/" className="text-[#ed2939] hover:underline">
+          <Link href="/" className="text-[var(--france-red-text)] hover:underline">
             Accueil
           </Link>
         </div>
       </section>
 
-      <TarifsSeoArticle />
-      <LocalSeo />
+      <div className="below-fold">
+        <TarifsSeoArticle />
+        <LocalSeo />
+      </div>
     </SiteShell>
   );
 }

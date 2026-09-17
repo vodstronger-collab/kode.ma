@@ -1,15 +1,20 @@
-"use client";
-
+import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
 import { GUARANTEE_TEXT, DEFAULT_WHATSAPP_MESSAGE, whatsappUrl } from "@/lib/constants";
-import { useGeoPricing } from "@/context/GeoPricingContext";
+import {
+  getCountryNameFr,
+  getHeroFlagImageUrl,
+  isLocalHeroImage,
+} from "@/lib/geo";
+import { getPricingPacks } from "@/lib/pricing";
+import { getRequestCountry } from "@/lib/request-geo";
 
-const HERO_FALLBACK = "/kode.png";
-
-export function Hero() {
-  const { countryName, heroImageUrl, currentPacks } = useGeoPricing();
-  const starting = currentPacks[0];
+export async function Hero() {
+  const countryCode = await getRequestCountry();
+  const countryName = getCountryNameFr(countryCode);
+  const heroImageUrl = getHeroFlagImageUrl(countryCode);
+  const starting = getPricingPacks(countryCode)[0];
+  const local = isLocalHeroImage(heroImageUrl);
 
   return (
     <section className="section-pad !pt-14">
@@ -57,52 +62,24 @@ export function Hero() {
           <p className="text-sm text-[#002395]/90">{GUARANTEE_TEXT}</p>
         </div>
 
-        <HeroVisual
-          heroImageUrl={heroImageUrl}
-          countryName={countryName}
-          startingPrice={starting?.price ?? 300}
-          currency={starting?.currency ?? "DH"}
-        />
+        <div className="animate-fade-up relative [animation-delay:120ms]">
+          <div className="glow-ring relative aspect-[16/10] overflow-hidden rounded-[1.5rem] border border-black/5 bg-white p-2">
+            <Image
+              src={heroImageUrl}
+              alt={`Kode — visiteur depuis ${countryName}`}
+              fill
+              priority
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              className="rounded-[1.1rem] object-cover"
+              unoptimized={local && heroImageUrl.endsWith(".svg")}
+            />
+          </div>
+          <div className="absolute -bottom-4 left-6 right-6 glass rounded-xl border-l-4 border-l-[var(--france-red)] px-4 py-3 text-sm font-medium text-[var(--heading)]">
+            Activation express · Serveurs VPS · Packs dès {starting?.price ?? 300}{" "}
+            {starting?.currency ?? "DH"}/an
+          </div>
+        </div>
       </div>
     </section>
-  );
-}
-
-function HeroVisual({
-  heroImageUrl,
-  countryName,
-  startingPrice,
-  currency,
-}: {
-  heroImageUrl: string;
-  countryName: string;
-  startingPrice: number;
-  currency: string;
-}) {
-  const [src, setSrc] = useState(heroImageUrl);
-
-  useEffect(() => {
-    setSrc(heroImageUrl);
-  }, [heroImageUrl]);
-
-  return (
-    <div className="animate-fade-up relative [animation-delay:120ms]">
-      <div className="glow-ring relative aspect-[16/10] overflow-hidden rounded-[1.5rem] border border-black/5 bg-white p-2">
-        {/* eslint-disable-next-line @next/next/no-img-element -- remote flag CDN; avoid optimizer 500s */}
-        <img
-          src={src}
-          alt={`Kode — visiteur depuis ${countryName}`}
-          width={1280}
-          height={800}
-          className="h-full w-full rounded-[1.1rem] object-cover"
-          onError={() => {
-            if (src !== HERO_FALLBACK) setSrc(HERO_FALLBACK);
-          }}
-        />
-      </div>
-      <div className="absolute -bottom-4 left-6 right-6 glass rounded-xl border-l-4 border-l-[#ed2939] px-4 py-3 text-sm font-medium text-[var(--heading)]">
-        Activation express · Serveurs VPS · Packs dès {startingPrice} {currency}/an
-      </div>
-    </div>
   );
 }

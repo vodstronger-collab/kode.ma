@@ -8,7 +8,7 @@ import { LocalSeo } from "@/components/LocalSeo";
 import { Pricing } from "@/components/Pricing";
 import { Reviews } from "@/components/Reviews";
 import { Support } from "@/components/Support";
-import { TrialForm } from "@/components/TrialForm";
+import { TrialFormSection } from "@/components/TrialFormSection";
 import { WhyChooseIptv } from "@/components/WhyChooseIptv";
 import { SiteShell } from "@/components/layout/SiteShell";
 
@@ -20,13 +20,15 @@ export default function HomePage() {
       <Features />
       <Pricing />
       <WhyChooseIptv />
-      <TrialForm />
-      <Reviews />
-      <InstallationGuide />
-      <Support />
-      <FAQ />
-      <HomeSeoArticle />
-      <LocalSeo />
+      <TrialFormSection />
+      <div className="below-fold">
+        <Reviews />
+        <InstallationGuide />
+        <Support />
+        <FAQ />
+        <HomeSeoArticle />
+        <LocalSeo />
+      </div>
     </SiteShell>
   );
 }

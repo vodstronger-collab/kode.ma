@@ -1,4 +1,4 @@
-import { TrialForm } from "@/components/TrialForm";
+import { TrialFormSection } from "@/components/TrialFormSection";
 import { TrustBadge } from "@/components/TrustBadge";
 import { PageHero } from "@/components/layout/PageHero";
 import { SiteShell } from "@/components/layout/SiteShell";
@@ -32,14 +32,14 @@ export default function ContactPage() {
           href={whatsappUrl(DEFAULT_WHATSAPP_MESSAGE)}
           target="_blank"
           rel="noopener noreferrer"
-          className="glass rounded-2xl p-6 transition hover:border-[#ed2939]/40"
+          className="glass rounded-2xl p-6 transition hover:border-[var(--france-red-text)]/40"
         >
           <h2 className="font-display text-lg font-bold text-[var(--heading)]">WhatsApp 24/7</h2>
           <p className="muted mt-2 text-sm">Activation et assistance en direct.</p>
         </a>
         <a
           href={`mailto:${SUPPORT_EMAIL}`}
-          className="glass rounded-2xl p-6 transition hover:border-[#ed2939]/40"
+          className="glass rounded-2xl p-6 transition hover:border-[var(--france-red-text)]/40"
         >
           <h2 className="font-display text-lg font-bold text-[var(--heading)]">E-mail</h2>
           <p className="muted mt-2 text-sm">{SUPPORT_EMAIL}</p>
@@ -49,7 +49,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <TrialForm />
+      <TrialFormSection />
     </SiteShell>
   );
 }

@@ -6,7 +6,9 @@
   --france-blue-deep: #001a6e;
   --france-blue-soft: #e8eefc;
   --france-red: #ed2939;
-  --france-red-deep: #c81e2c;
+  --france-red-deep: #a11220;
+  /* Contraste WCAG AA sur fond blanc (≥ 4.5:1) */
+  --france-red-text: #b01020;
   --france-red-soft: #fde8ea;
 
   --bg: #f5f7fb;
@@ -101,15 +103,15 @@ a {
   gap: 0.5rem;
   padding: 0.85rem 1.35rem;
   border-radius: 0.65rem;
-  border: 1.5px solid var(--france-red);
+  border: 1.5px solid var(--france-red-text);
   background: #ffffff;
-  color: var(--france-red);
+  color: var(--france-red-text);
   font-weight: 600;
   transition: background 0.2s ease, color 0.2s ease;
 }
 
 .btn-secondary:hover {
-  background: var(--france-red);
+  background: var(--france-red-text);
   color: #ffffff;
 }
 
@@ -203,6 +205,12 @@ a {
 
 .animate-fade-up {
   animation: fade-up 0.65s ease both;
+}
+
+/* Skip layout/paint for offscreen SEO/FAQ blocks (keeps HTML for crawlers) */
+.below-fold {
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 2400px;
 }
 
 @media (prefers-reduced-motion: reduce) {

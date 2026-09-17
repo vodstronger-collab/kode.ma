@@ -30,10 +30,10 @@ export default function FaqPage() {
       </SeoContentBlock>
       <FAQ compact title="Réponses Kode" />
       <section className="container-site flex flex-wrap gap-4 pb-20 text-sm">
-        <Link href="/contact" className="text-[#ed2939] hover:underline">
+        <Link href="/contact" className="text-[var(--france-red-text)] hover:underline">
           Contact
         </Link>
-        <Link href="/blog" className="text-[#ed2939] hover:underline">
+        <Link href="/blog" className="text-[var(--france-red-text)] hover:underline">
           Blog
         </Link>
       </section>

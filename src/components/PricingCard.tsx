@@ -1,11 +1,8 @@
-"use client";
-
 import { whatsappUrl } from "@/lib/constants";
 import type { PricingPack } from "@/lib/pricing";
 
 const flagThemes = {
   pro: {
-    // Fond bleu → écriture blanche
     card: "border-[#002395] bg-[#002395] shadow-[0_16px_40px_rgba(0,35,149,0.25)]",
     stripe: "bg-[#001a6e]",
     title: "!text-white",
@@ -14,12 +11,10 @@ const flagThemes = {
     feature: "!text-white",
     check: "!text-white",
     badge: "bg-white !text-[#002395]",
-    // Bouton blanc → écriture bleue
     button:
       "w-full inline-flex items-center justify-center rounded-[0.65rem] bg-white px-4 py-3 font-bold !text-[#002395] transition hover:bg-[#e8eefc]",
   },
   ultra: {
-    // Fond blanc → écriture bleue
     card: "border-[#002395]/25 bg-white shadow-[0_16px_40px_rgba(12,18,40,0.1)]",
     stripe: "bg-[#e8eefc]",
     title: "!text-[#002395]",
@@ -28,23 +23,20 @@ const flagThemes = {
     feature: "!text-[#002395]",
     check: "!text-[#002395]",
     badge: "bg-[#002395] !text-white",
-    // Bouton bleu → écriture blanche
     button:
       "w-full inline-flex items-center justify-center rounded-[0.65rem] bg-[#002395] px-4 py-3 font-bold !text-white transition hover:bg-[#001a6e]",
   },
   vip: {
-    // Fond rouge → écriture blanche
-    card: "border-[#ed2939] bg-[#ed2939] shadow-[0_16px_40px_rgba(237,41,57,0.25)]",
-    stripe: "bg-[#c81e2c]",
+    card: "border-[var(--france-red)] bg-[var(--france-red)] shadow-[0_16px_40px_rgba(185,28,28,0.28)]",
+    stripe: "bg-[var(--france-red-deep)]",
     title: "!text-white",
     price: "!text-white",
     period: "!text-white/75",
     feature: "!text-white",
     check: "!text-white",
-    badge: "bg-white !text-[#ed2939]",
-    // Bouton blanc → écriture rouge
+    badge: "bg-white !text-[var(--france-red-text)]",
     button:
-      "w-full inline-flex items-center justify-center rounded-[0.65rem] bg-white px-4 py-3 font-bold !text-[#ed2939] transition hover:bg-[#fde8ea]",
+      "w-full inline-flex items-center justify-center rounded-[0.65rem] bg-white px-4 py-3 font-bold !text-[var(--france-red-text)] transition hover:bg-[#fde8ea]",
   },
 } as const;
 

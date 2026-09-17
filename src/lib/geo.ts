@@ -9,9 +9,15 @@ export function normalizeCountryCode(code: string | null | undefined): string {
   return normalized;
 }
 
-/** Wide PNG flag for hero (flagcdn) */
+/** Hero image: local for MA (LCP), compact CDN otherwise, kode.png fallback path via UI */
 export function getHeroFlagImageUrl(countryCode: string): string {
-  return `https://flagcdn.com/w1280/${normalizeCountryCode(countryCode).toLowerCase()}.png`;
+  const code = normalizeCountryCode(countryCode).toLowerCase();
+  if (code === "ma") return "/flags/ma.svg";
+  return `https://flagcdn.com/w640/${code}.png`;
+}
+
+export function isLocalHeroImage(url: string): boolean {
+  return url.startsWith("/");
 }
 
 export function getCountryNameFr(countryCode: string): string {

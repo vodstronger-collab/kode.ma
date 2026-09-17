@@ -1,18 +1,17 @@
-"use client";
-
 import { TrustBadge } from "@/components/TrustBadge";
 import { PricingCard } from "@/components/PricingCard";
-import { compareRows } from "@/lib/pricing";
-import { useGeoPricing } from "@/context/GeoPricingContext";
+import { compareRows, getPricingPacks } from "@/lib/pricing";
+import { getRequestCountry } from "@/lib/request-geo";
 
-export function Pricing({
+export async function Pricing({
   showHeader = true,
   id = "tarifs",
 }: {
   showHeader?: boolean;
   id?: string;
 }) {
-  const { currentPacks } = useGeoPricing();
+  const countryCode = await getRequestCountry();
+  const currentPacks = getPricingPacks(countryCode);
 
   return (
     <section id={id} className="section-pad !py-16">

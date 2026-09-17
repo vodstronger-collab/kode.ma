@@ -2,17 +2,16 @@
 
 import { FormEvent, useState } from "react";
 import { whatsappUrl } from "@/lib/constants";
-import { useGeoPricing } from "@/context/GeoPricingContext";
+import type { PricingPack } from "@/lib/pricing";
 
-export function TrialForm() {
-  const { currentPacks } = useGeoPricing();
+export function TrialForm({ packs }: { packs: PricingPack[] }) {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
-  const [pack, setPack] = useState(currentPacks[1]?.id ?? "ultra");
+  const [pack, setPack] = useState(packs[1]?.id ?? packs[0]?.id ?? "ultra");
 
   function onSubmit(e: FormEvent) {
     e.preventDefault();
-    const selected = currentPacks.find((p) => p.id === pack);
+    const selected = packs.find((p) => p.id === pack);
     const message = `${selected?.whatsappMessage ?? "Bonjour Kode, je souhaite commander."}\nNom: ${name}\nTéléphone: ${phone}`;
     window.open(whatsappUrl(message), "_blank", "noopener,noreferrer");
   }
@@ -55,7 +54,7 @@ export function TrialForm() {
                 onChange={(e) => setPack(e.target.value)}
                 className="input-field"
               >
-                {currentPacks.map((p) => (
+                {packs.map((p) => (
                   <option key={p.id} value={p.id}>
                     {p.name} — {p.price} {p.currency}
                     {p.period}
