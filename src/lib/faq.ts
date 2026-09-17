@@ -71,7 +71,7 @@ export const faqCategories: FaqCategory[] = [
       {
         question: "Le service propose-t-il le catch-up, l’EPG et la VOD ?",
         answer:
-          "Oui, selon l’application et le pack : live TV (+45 000 chaînes en cible boutique), VOD films/séries (environ +90 000 films / +50 000 séries en Ultra ; jusqu’à +180 000 contenus VOD en VIP), EPG et replay/catch-up quand l’app et le bouquet le supportent (ex. IPTV Smarters, Nino Player).",
+          "Oui, selon l’application et le pack : live TV (+45 000 chaînes en cible boutique), VOD films/séries (environ +90 000 films / +50 000 séries en Ultra ; jusqu’à +180 000 contenus VOD en VIP), EPG, et rattrapage / catch-up jusqu’à 7 jours sur le pack VIP quand l’app et le bouquet le supportent (ex. IPTV Smarters, Nino Player).",
       },
     ],
   },
@@ -82,7 +82,7 @@ export const faqCategories: FaqCategory[] = [
       {
         question: "Quels sont les prix Kode au Maroc (MAD) ?",
         answer:
-          "Tarifs annuels Maroc (MAD) : Pack Pro = 300 DH/an (HD/FHD, 1 appareil). Expérience Ultra = 450 DH/an (jusqu’à 4K, 2 appareils, Anti-freeze 2.2). Exclusif Suprême VIP = 600 DH/an (4K UHD, VPS dédiés, 3 appareils, VOD élargie). Voir https://kode.ma/abonnement-iptv.",
+          "Tarifs annuels Maroc (MAD) : Pack Pro = 300 DH/an (HD/FHD, 1 appareil). Expérience Ultra = 450 DH/an (jusqu’à 4K, 2 appareils, Anti-freeze 2.2). Exclusif Suprême VIP = 600 DH/an (4K UHD, VPS dédiés, Anti-freeze 3.0, 3 appareils, VOD élargie). Voir https://kode.ma/abonnement-iptv.",
       },
       {
         question: "Quels sont les prix Kode en Europe et à l’international (EUR) ?",
@@ -92,7 +92,7 @@ export const faqCategories: FaqCategory[] = [
       {
         question: "Que comprennent les packs Pro, Ultra et VIP ?",
         answer:
-          "Pro (300 DH / 45 €) : HD/FHD, 1 écran, App PRO, support WhatsApp. Ultra (450 DH / 59 €) : jusqu’à 4K, 2 écrans, Anti-freeze 2.2, support prioritaire. VIP (600 DH / 79 €) : 4K UHD, serveurs VPS dédiés, 3 écrans, VOD étendue, activation express. Tous : abonnement annuel, pas d’essai gratuit, garantie 45 jours.",
+          "Pro (300 DH / 45 €) : HD/FHD, 1 écran, App PRO, support WhatsApp. Ultra (450 DH / 59 €) : jusqu’à 4K, 2 écrans, Anti-freeze 2.2, support prioritaire. VIP (600 DH / 79 €) : 4K UHD, serveurs VPS dédiés, Anti-freeze 3.0, rattrapage 7 j, 3 écrans, VOD étendue, activation express. Tous : abonnement annuel, pas d’essai gratuit, garantie 45 jours.",
       },
       {
         question: "Quels sont les modes de paiement acceptés ?",

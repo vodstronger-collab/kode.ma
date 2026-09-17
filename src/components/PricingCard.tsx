@@ -27,17 +27,17 @@ const flagThemes = {
       "w-full inline-flex items-center justify-center rounded-[0.65rem] bg-[#002395] px-4 py-3 font-bold !text-white transition hover:bg-[#001a6e]",
   },
   vip: {
-    // Fond rouge foncé → blanc passe WCAG AA (≥ 4.5:1)
-    card: "border-[var(--france-red-deep)] bg-[var(--france-red-deep)] shadow-[0_16px_40px_rgba(161,18,32,0.3)]",
-    stripe: "bg-[#8a0e1a]",
+    // Rouge vif d’origine (1re maquette)
+    card: "border-[#ed2939] bg-[#ed2939] shadow-[0_16px_40px_rgba(237,41,57,0.25)]",
+    stripe: "bg-[#c81e2c]",
     title: "!text-white",
     price: "!text-white",
     period: "!text-white",
     feature: "!text-white",
     check: "!text-white",
-    badge: "bg-white !text-[var(--france-red-text)]",
+    badge: "bg-white !text-[#ed2939]",
     button:
-      "w-full inline-flex items-center justify-center rounded-[0.65rem] bg-white px-4 py-3 font-bold !text-[var(--france-red-text)] transition hover:bg-[#fde8ea]",
+      "w-full inline-flex items-center justify-center rounded-[0.65rem] bg-white px-4 py-3 font-bold !text-[#ed2939] transition hover:bg-[#fde8ea]",
   },
 } as const;
 

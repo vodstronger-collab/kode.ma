@@ -35,7 +35,7 @@ export const homeSeoArticle = {
     {
       heading: "IPTV sans coupure : Anti-freeze, VPS et débit recommandé",
       paragraphs: [
-        "Les recherches « IPTV sans coupure » et « abonnement IPTV stable » montrent une douleur réelle : les freezes. Kode répond avec Anti-freeze 2.2, un routage optimisé et, sur le VIP, des VPS dédiés. Côté utilisateur, nous recommandons environ 8 Mbps pour le HD, 15 Mbps pour le FHD et 25 Mbps stables pour le 4K. Une box fibre correctement configurée reste le meilleur allié d’un IPTV 4K Maroc. Notre guide d’installation et le support WhatsApp vous aident à régler la qualité d’image selon votre débit.",
+        "Les recherches « IPTV sans coupure » et « abonnement IPTV stable » montrent une douleur réelle : les freezes. Kode répond avec Anti-freeze 2.2 sur Ultra et Anti-freeze 3.0 sur le VIP, un routage optimisé et, sur le VIP, des VPS dédiés. Côté utilisateur, nous recommandons environ 8 Mbps pour le HD, 15 Mbps pour le FHD et 25 Mbps stables pour le 4K. Une box fibre correctement configurée reste le meilleur allié d’un IPTV 4K Maroc. Notre guide d’installation et le support WhatsApp vous aident à régler la qualité d’image selon votre débit.",
         "Enfin, Kode n’utilise pas de discours trompeur. Pas d’essai gratuit affiché partout pour « appâter » : la promesse est un abonnement IPTV Maroc Premium, des tarifs 2026 lisibles, une activation WhatsApp rapide et une garantie 45 jours. Cette cohérence entre l’offre et les besoins réels des utilisateurs fait de Kode une option solide pour les recherches IPTV Maroc, abonnement IPTV Maroc, meilleur IPTV Maroc, fournisseur IPTV Maroc, acheter IPTV Maroc, IPTV 4K Maroc et IPTV HD Maroc.",
       ],
     },

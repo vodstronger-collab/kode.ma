@@ -4,7 +4,7 @@ export const seoContent = {
     paragraphs: [
       "Kode est pensé pour le marché marocain : abonnement IPTV Premium stable, image HD/4K, et un parcours d'achat simple via WhatsApp. Que vous soyez à Casablanca, Rabat ou en diaspora, l'objectif reste le même — un streaming fluide sans prise de tête.",
       "Nos packs annuels (Pack Pro 300 dhs, Expérience Ultra 450 dhs, Exclusif Suprême VIP 600 dhs) affichent clairement le nombre d'appareils et la qualité maximale. Pas d'essai gratuit : la confiance passe par une garantie satisfait ou remboursé sous 45 jours.",
-      "Infrastructure VPS, Anti-freeze 2.2, applications recommandées (Nino Player, Smarters, NetIPTV) et support réactif : Kode combine performance technique et service client pour un IPTV Maroc premium.",
+      "Infrastructure VPS, Anti-freeze 2.2 (Ultra) / 3.0 (VIP), applications recommandées (Nino Player, Smarters, NetIPTV) et support réactif : Kode combine performance technique et service client pour un IPTV Maroc premium.",
     ],
   },
   abonnementIntro:
@@ -14,7 +14,7 @@ export const seoContent = {
     "Acheter un abonnement IPTV Maroc chez Kode, c'est prioriser la stabilité et un support local. Après paiement, vous recevez vos accès et un accompagnement d'installation.",
   ],
   fonctionnalitesIntro:
-    "Découvrez l'infrastructure Kode : serveurs VPS dédiés, codec H.265 4K, Anti-freeze 2.2, EPG dynamique et routage Smart-OTT pour un IPTV Maroc vraiment premium.",
+    "Découvrez l'infrastructure Kode : serveurs VPS dédiés, codec H.265 4K, Anti-freeze 2.2 / 3.0, EPG dynamique et routage Smart-OTT pour un IPTV Maroc vraiment premium.",
   guideIntro:
     "Suivez nos tutoriels pour installer Kode sur Smart TV, Android, Firestick, IPTV Smarters et MAG. En cas de blocage, le support WhatsApp vous guide pas à pas.",
   faqIntro:

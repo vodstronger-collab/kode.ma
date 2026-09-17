@@ -8,7 +8,7 @@ export const tarifsSeoArticle = {
       heading: "Comprendre le prix d’un abonnement IPTV Maroc",
       paragraphs: [
         "Quand on cherche « tarifs IPTV Maroc », « prix IPTV » ou « abonnement IPTV Maroc », l’objectif est clair : payer le juste prix pour un service stable. Un tarif trop bas cache souvent des coupures, un support absent ou des serveurs saturés. À l’inverse, un pack premium n’a de sens que s’il apporte vraiment du 4K, plus d’appareils ou une meilleure infrastructure. Kode affiche trois prix annuels transparents pour éviter les mauvaises surprises au moment d’acheter IPTV Maroc.",
-        "Le Pack Pro à 300 dhs/an cible l’usage mono-écran en HD et FHD : idéal pour démarrer, tester la qualité Kode et suivre le sport ou les chaînes du quotidien. L’Expérience Ultra à 450 dhs/an est le forfait le plus demandé : accès 4K, deux appareils non simultanés, Anti-freeze 2.2 et support WhatsApp prioritaire. Le VIP à 600 dhs/an ajoute des serveurs VPS, davantage de VOD et trois appareils. Ces paliers permettent de classer clairement les intentions « prix IPTV », « forfait IPTV Maroc » et « IPTV 4K Maroc ».",
+        "Le Pack Pro à 300 dhs/an cible l’usage mono-écran en HD et FHD : idéal pour démarrer, tester la qualité Kode et suivre le sport ou les chaînes du quotidien. L’Expérience Ultra à 450 dhs/an est le forfait le plus demandé : accès 4K, deux appareils non simultanés, Anti-freeze 2.2 et support WhatsApp prioritaire. Le VIP à 600 dhs/an ajoute des serveurs VPS, Anti-freeze 3.0, davantage de VOD et trois appareils. Ces paliers permettent de classer clairement les intentions « prix IPTV », « forfait IPTV Maroc » et « IPTV 4K Maroc ».",
       ],
     },
     {

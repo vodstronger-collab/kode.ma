@@ -10,12 +10,13 @@ import { seoContent } from "@/lib/seo-content";
 export const metadata = createMetadata({
   title: "Fonctionnalités IPTV | Meilleur IPTV Maroc, Serveur Stable & 4K - Kode",
   description:
-    "Infrastructure Kode : serveurs VPS dédiés, codec H.265 4K, Anti-freeze 2.2, EPG dynamique et routage Smart-OTT pour un IPTV Maroc premium ultra-stable.",
+    "Infrastructure Kode : serveurs VPS dédiés, codec H.265 4K, Anti-freeze 2.2 (Ultra) / 3.0 (VIP), EPG dynamique et routage Smart-OTT pour un IPTV Maroc premium ultra-stable.",
   path: "/fonctionnalites",
   keywords: [
     "Meilleur IPTV Maroc",
     "Serveur IPTV stable",
     "IPTV 4K Maroc",
+    "Anti-freeze 3.0",
     "Anti-freeze 2.2",
     "abonnement IPTV Maroc",
   ],

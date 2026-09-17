@@ -15,9 +15,9 @@ export const featurePillars: FeaturePillar[] = [
       "Encodage HEVC / H.265 pour une image 4K nette avec un débit maîtrisé — idéal sur fibre et bons liens ADSL.",
   },
   {
-    title: "Anti-freeze 2.2",
+    title: "Anti-freeze 2.2 & 3.0",
     description:
-      "Couche anti-freeze qui limite les micro-coupures et stabilise le zapping, surtout aux heures de pointe.",
+      "Anti-freeze 2.2 sur Ultra et Anti-freeze 3.0 sur le pack VIP : couche anti-coupure qui limite les micro-freezes et stabilise le zapping aux heures de pointe.",
   },
   {
     title: "EPG dynamique",

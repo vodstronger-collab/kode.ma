@@ -51,7 +51,8 @@ const PACK_META = [
       "+180 000 contenus VOD",
       "3 appareils (non simultanés)",
       "App PRO incluse",
-      "Anti-freeze 2.2",
+      "Anti-freeze 3.0",
+      "Rattrapage 7 j",
       "Activation express WhatsApp",
     ],
     whatsappMessage:
@@ -89,6 +90,7 @@ export const compareRows = [
   { label: "Films", pro: "+90k", ultra: "+90k", vip: "+180k" },
   { label: "Séries", pro: "+50k", ultra: "+50k", vip: "+50k" },
   { label: "VPS dédiés", pro: "—", ultra: "—", vip: "Oui" },
-  { label: "Anti-freeze", pro: "Standard", ultra: "2.2", vip: "2.2" },
+  { label: "Anti-freeze", pro: "Standard", ultra: "2.2", vip: "3.0" },
+  { label: "Rattrapage", pro: "—", ultra: "—", vip: "7 j" },
   { label: "App PRO", pro: "Incluse", ultra: "Incluse", vip: "Incluse" },
 ];
