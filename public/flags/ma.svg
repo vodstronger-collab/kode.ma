@@ -1,10 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" role="img" aria-label="Drapeau du Maroc">
-  <rect width="900" height="600" fill="#c1272d"/>
+  <!-- Rouge officiel + pentagramme vert (sceau de Salomon) -->
+  <rect width="900" height="600" fill="#C1272D"/>
   <polygon
     fill="none"
     stroke="#006233"
-    stroke-width="36"
+    stroke-width="30"
     stroke-linejoin="miter"
-    points="450,168 512,360 348,242 552,242 388,360"
+    points="450,160 532.3,413.3 316.9,256.7 583.1,256.7 367.7,413.3"
   />
 </svg>
