@@ -1,7 +1,7 @@
 export const SITE_NAME = "Kode";
 export const SITE_DOMAIN = "kode.ma";
 export const SITE_URL = "https://kode.ma";
-export const WHATSAPP_NUMBER = "212612345678";
+export const WHATSAPP_NUMBER = "212600184186";
 export const SUPPORT_EMAIL = "support@kode.ma";
 
 export function whatsappUrl(message?: string) {
@@ -14,4 +14,4 @@ export const GUARANTEE_TEXT =
   "Satisfait ou remboursé sous 45 jours — serveurs garantis durant toute la période de l'abonnement";
 
 export const DEFAULT_WHATSAPP_MESSAGE =
-  "Bonjour Kode, je souhaite souscrire à un abonnement IPTV Maroc Premium.";
+  "Bonjour, je viens de commander sur kode.ma et je veux activer mon abonnement.";

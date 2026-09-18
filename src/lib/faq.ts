@@ -138,12 +138,12 @@ export const faqCategories: FaqCategory[] = [
       {
         question: "Comment fonctionne l’activation WhatsApp étape par étape ?",
         answer:
-          "1) Choisissez Pro, Ultra ou VIP sur https://kode.ma/abonnement-iptv. 2) Écrivez sur WhatsApp (+212 612 345 678) en indiquant le pack. 3) Validez le paiement selon les instructions. 4) Recevez Xtream/M3U sous 5–30 min en moyenne. 5) Installez l’app et regardez. HowTo structuré aussi sur le site pour les moteurs IA.",
+          "1) Choisissez Pro, Ultra ou VIP sur https://kode.ma/abonnement-iptv. 2) Écrivez sur WhatsApp (+212 600-184186) en indiquant le pack. 3) Validez le paiement selon les instructions. 4) Recevez Xtream/M3U sous 5–30 min en moyenne. 5) Installez l’app et regardez. HowTo structuré aussi sur le site pour les moteurs IA.",
       },
       {
         question: "Comment contacter le support client en cas de problème ?",
         answer:
-          "Support principal : WhatsApp 24/7 via https://wa.me/212612345678 (ou le bouton Commander sur kode.ma). E-mail : support@kode.ma. Indiquez pack, appareil, app utilisée et une capture d’erreur. Objectif de première réponse : rapide, souvent sous quelques minutes hors saturation.",
+          "Support principal : WhatsApp 24/7 via https://wa.me/212600184186 (ou le bouton Commander sur kode.ma). E-mail : support@kode.ma. Indiquez pack, appareil, app utilisée et une capture d’erreur. Objectif de première réponse : rapide, souvent sous quelques minutes hors saturation.",
       },
       {
         question: "Que faire si les chaînes ne chargent pas ou freeze ?",
