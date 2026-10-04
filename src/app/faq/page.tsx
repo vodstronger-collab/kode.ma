@@ -9,7 +9,7 @@ import { seoContent } from "@/lib/seo-content";
 export const metadata = createMetadata({
   title: "FAQ IPTV Maroc | Appareils, Prix MAD/EUR, Activation Xtream - Kode",
   description:
-    "FAQ complète Kode : Smart TV Samsung/LG, Firestick, Apple TV, apps IPTV Smarters & Nino Player, débit 4K, VPN, prix 300–600 DH / 45–79 €, activation WhatsApp et garantie 45 jours.",
+    "FAQ complète Kode : Smart TV Samsung/LG, Firestick, Apple TV, apps IPTV Smarters & Nino Player, débit 4K, VPN, prix 300–600 DH / 35–65 €, activation WhatsApp et garantie 45 jours.",
   path: "/faq",
   keywords: [
     "FAQ IPTV Maroc",

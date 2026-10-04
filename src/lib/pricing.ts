@@ -7,7 +7,6 @@ export type PricingPack = {
   badge?: string;
   highlighted?: boolean;
   features: string[];
-  /** Fixed WhatsApp CTA message — never changes with geo */
   whatsappMessage: string;
 };
 
@@ -23,7 +22,7 @@ const PACK_META = [
       "App PRO incluse",
       "Support WhatsApp 24/7",
     ],
-    whatsappMessage: "Bonjour Kode, je souhaite le Pack Pro à 300 dhs/an.",
+    whatsappLabel: "le Pack Pro",
   },
   {
     id: "ultra",
@@ -39,7 +38,7 @@ const PACK_META = [
       "Anti-freeze 2.2",
       "Support WhatsApp prioritaire",
     ],
-    whatsappMessage: "Bonjour Kode, je souhaite l'Expérience Ultra à 450 dhs/an.",
+    whatsappLabel: "l'Expérience Ultra",
   },
   {
     id: "vip",
@@ -55,18 +54,18 @@ const PACK_META = [
       "Rattrapage 7 j",
       "Activation express WhatsApp",
     ],
-    whatsappMessage:
-      "Bonjour Kode, je souhaite le pack Exclusif Suprême VIP à 600 dhs/an.",
+    whatsappLabel: "le pack Exclusif Suprême VIP",
   },
 ] as const;
 
 const MA_PRICES = { pro: 300, ultra: 450, vip: 600 } as const;
-const INTL_PRICES = { pro: 45, ultra: 59, vip: 79 } as const;
+const INTL_PRICES = { pro: 35, ultra: 50, vip: 65 } as const;
 
 export function getPricingPacks(countryCode: string): PricingPack[] {
   const isMA = countryCode.toUpperCase() === "MA";
   const prices = isMA ? MA_PRICES : INTL_PRICES;
   const currency = isMA ? "DH" : "€";
+  const messageCurrency = isMA ? "dhs" : "€";
 
   return PACK_META.map((meta) => ({
     id: meta.id,
@@ -74,7 +73,7 @@ export function getPricingPacks(countryCode: string): PricingPack[] {
     badge: "badge" in meta ? meta.badge : undefined,
     highlighted: "highlighted" in meta ? meta.highlighted : undefined,
     features: [...meta.features],
-    whatsappMessage: meta.whatsappMessage,
+    whatsappMessage: `Bonjour Kode, je souhaite ${meta.whatsappLabel} à ${prices[meta.id]} ${messageCurrency}/an.`,
     price: prices[meta.id],
     currency,
     period: "/an",

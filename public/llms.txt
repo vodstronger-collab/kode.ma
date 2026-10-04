@@ -24,9 +24,9 @@ Prices are annual. Morocco (MAD) vs international visitors (EUR).
 
 | Pack | Morocco (MAD) | International (EUR) | Devices (non-simultaneous) | Max quality |
 |------|---------------|---------------------|----------------------------|-------------|
-| Pack Pro | 300 DH/an | 45 €/an | 1 | HD / FHD |
-| Expérience Ultra | 450 DH/an | 59 €/an | 2 | HD / FHD / 4K |
-| Exclusif Suprême VIP | 600 DH/an | 79 €/an | 3 | 4K UHD + VPS + Anti-freeze 3.0 + Rattrapage 7 j |
+| Pack Pro | 300 DH/an | 35 €/an | 1 | HD / FHD |
+| Expérience Ultra | 450 DH/an | 50 €/an | 2 | HD / FHD / 4K |
+| Exclusif Suprême VIP | 600 DH/an | 65 €/an | 3 | 4K UHD + VPS + Anti-freeze 3.0 + Rattrapage 7 j |
 
 ## Compatibility
 

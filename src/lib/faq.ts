@@ -87,12 +87,12 @@ export const faqCategories: FaqCategory[] = [
       {
         question: "Quels sont les prix Kode en Europe et à l’international (EUR) ?",
         answer:
-          "Pour les visiteurs hors Maroc, les tarifs annuels affichés sont en EUR : Pack Pro = 45 €/an, Expérience Ultra = 59 €/an, Exclusif Suprême VIP = 79 €/an. Les équivalents Maroc restent 300 / 450 / 600 DH. Le site adapte l’affichage selon la localisation ; les messages WhatsApp de commande restent basés sur l’offre Kode.",
+          "Pour les visiteurs hors Maroc, les tarifs annuels affichés sont en EUR : Pack Pro = 35 €/an, Expérience Ultra = 50 €/an, Exclusif Suprême VIP = 65 €/an. Les équivalents Maroc restent 300 / 450 / 600 DH. Le site adapte l’affichage et les messages WhatsApp de commande selon la localisation.",
       },
       {
         question: "Que comprennent les packs Pro, Ultra et VIP ?",
         answer:
-          "Pro (300 DH / 45 €) : HD/FHD, 1 écran, App PRO, support WhatsApp. Ultra (450 DH / 59 €) : jusqu’à 4K, 2 écrans, Anti-freeze 2.2, support prioritaire. VIP (600 DH / 79 €) : 4K UHD, serveurs VPS dédiés, Anti-freeze 3.0, rattrapage 7 j, 3 écrans, VOD étendue, activation express. Tous : abonnement annuel, pas d’essai gratuit, garantie 45 jours.",
+          "Pro (300 DH / 35 €) : HD/FHD, 1 écran, App PRO, support WhatsApp. Ultra (450 DH / 50 €) : jusqu’à 4K, 2 écrans, Anti-freeze 2.2, support prioritaire. VIP (600 DH / 65 €) : 4K UHD, serveurs VPS dédiés, Anti-freeze 3.0, rattrapage 7 j, 3 écrans, VOD étendue, activation express. Tous : abonnement annuel, pas d’essai gratuit, garantie 45 jours.",
       },
       {
         question: "Quels sont les modes de paiement acceptés ?",
@@ -107,7 +107,7 @@ export const faqCategories: FaqCategory[] = [
       {
         question: "Les abonnements sont-ils mensuels ou annuels ?",
         answer:
-          "Les formules affichées sur kode.ma sont annuelles (prix /an) : 300, 450 ou 600 DH au Maroc ; 45, 59 ou 79 € à l’international. Cela évite les reconductions mensuelles opaques. Pour toute autre durée, demandez explicitement au support WhatsApp.",
+          "Les formules affichées sur kode.ma sont annuelles (prix /an) : 300, 450 ou 600 DH au Maroc ; 35, 50 ou 65 € à l’international. Cela évite les reconductions mensuelles opaques. Pour toute autre durée, demandez explicitement au support WhatsApp.",
       },
       {
         question: "Puis-je changer de pack après l’achat ?",
@@ -189,7 +189,7 @@ export const faqCategories: FaqCategory[] = [
       {
         question: "Kode est-il disponible hors Maroc (diaspora Europe / Golfe) ?",
         answer:
-          "Oui. Kode sert le Maroc en priorité et accompagne la diaspora (Europe, Golfe, etc.) via WhatsApp. Les prix internationaux s’affichent en EUR (45 / 59 / 79 €/an). Un VPN peut aider selon le pays et le FAI. Voir aussi la section couverture sur l’accueil kode.ma.",
+          "Oui. Kode sert le Maroc en priorité et accompagne la diaspora (Europe, Golfe, etc.) via WhatsApp. Les prix internationaux s’affichent en EUR (35 / 50 / 65 €/an). Un VPN peut aider selon le pays et le FAI. Voir aussi la section couverture sur l’accueil kode.ma.",
       },
     ],
   },
