@@ -2,10 +2,19 @@ import type { MetadataRoute } from "next";
 import { SITE_URL } from "@/lib/constants";
 import { legalNav, mainNav } from "@/lib/navigation";
 
+/** Keep sitemap fresh for Search Console (not frozen at last build). */
+export const dynamic = "force-dynamic";
+export const revalidate = 3600;
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
 
-  const priorityFor = (path: string): { priority: number; changeFrequency: MetadataRoute.Sitemap[0]["changeFrequency"] } => {
+  const priorityFor = (
+    path: string,
+  ): {
+    priority: number;
+    changeFrequency: MetadataRoute.Sitemap[0]["changeFrequency"];
+  } => {
     if (path === "/") return { priority: 1.0, changeFrequency: "daily" };
     if (path === "/abonnement-iptv") return { priority: 0.9, changeFrequency: "weekly" };
     if (path === "/fonctionnalites" || path === "/guide") {

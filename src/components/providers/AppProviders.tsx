@@ -1,14 +1,7 @@
-import { cookies, headers } from "next/headers";
 import { GeoPricingProvider } from "@/context/GeoPricingContext";
-import { GEO_COUNTRY_COOKIE, normalizeCountryCode } from "@/lib/geo";
+import { getRequestCountry } from "@/lib/request-geo";
 
 export async function AppProviders({ children }: { children: React.ReactNode }) {
-  const cookieStore = await cookies();
-  const headerStore = await headers();
-
-  const countryCode = normalizeCountryCode(
-    cookieStore.get(GEO_COUNTRY_COOKIE)?.value ?? headerStore.get("x-kode-country") ?? "MA",
-  );
-
+  const countryCode = await getRequestCountry();
   return <GeoPricingProvider countryCode={countryCode}>{children}</GeoPricingProvider>;
 }
