@@ -16,6 +16,7 @@ const PACK_META = [
     name: "Pack Pro",
     features: [
       "HD & FHD",
+      "+10 000 chaînes en direct",
       "+90 000 films",
       "+50 000 séries",
       "1 appareil",
@@ -31,6 +32,7 @@ const PACK_META = [
     highlighted: true,
     features: [
       "HD / FHD / 4K",
+      "+29 000 chaînes en direct",
       "+90 000 films",
       "+50 000 séries",
       "2 appareils (non simultanés)",
@@ -46,6 +48,7 @@ const PACK_META = [
     badge: "VIP",
     features: [
       "4K UHD",
+      "+45 000 chaînes en direct",
       "Serveurs VPS dédiés",
       "+180 000 contenus VOD",
       "3 appareils (non simultanés)",
@@ -85,6 +88,7 @@ export const pricingPacks = getPricingPacks("MA");
 
 export const compareRows = [
   { label: "Qualité max", pro: "FHD", ultra: "4K", vip: "4K UHD" },
+  { label: "Chaînes live", pro: "+10k", ultra: "+29k", vip: "+45k" },
   { label: "Appareils", pro: "1", ultra: "2*", vip: "3*" },
   { label: "Films", pro: "+90k", ultra: "+90k", vip: "+180k" },
   { label: "Séries", pro: "+50k", ultra: "+50k", vip: "+50k" },
